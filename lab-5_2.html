@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AIUB University Admission Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+</head>
+<body>
+    <form action="#" method="post" enctype="multipart/form-data">
+        <h1>AIUB University Admission Form</h1>
+
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" maxlength="50" required><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required><br>
+
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="Male" required>
+            <label for="male" style="display:inline;">Male</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female" style="display:inline;">Female</label>
+            <input type="radio" id="other" name="gender" value="Other">
+            <label for="other" style="display:inline;">Other</label><br>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" maxlength="40" required><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone" maxlength="15" required><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Academic Information</legend>
+            <label for="ssc">SSC GPA:</label>
+            <input type="text" id="ssc" name="ssc" maxlength="5" required><br>
+
+            <label for="hsc">HSC GPA:</label>
+            <input type="text" id="hsc" name="hsc" maxlength="5" required><br>
+
+            <label>Extracurricular Interests:</label>
+            <input type="checkbox" id="sports" name="interests[]" value="Sports"><br>
+            <label for="sports" style="display:inline;">Sports</label>
+            <input type="checkbox" id="music" name="interests[]" value="Music"><br>
+            <label for="music" style="display:inline;">Music</label>
+            <input type="checkbox" id="art" name="interests[]" value="Art"><br>
+            <label for="art" style="display:inline;">Art</label>
+            <input type="checkbox" id="tech" name="interests[]" value="Tech Club"><br>
+            <label for="tech" style="display:inline;">Tech Club</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferred Department</legend>
+            <label for="department">Department:</label>
+            <select id="department" name="department" required>
+                <option value="">Select Department</option>
+                <option value="CSE">Computer Science & Engineering (CSE)</option>
+                <option value="EEE">Electrical & Electronic Engineering (EEE)</option>
+                <option value="COE">Computer Engineering (COE)</option>
+                <option value="CS">Computer Science (CS)</option>
+                <option value="SE">Software Engineering (SE)</option>
+            </select><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Upload Documents</legend>
+            <label for="photo">Photograph:</label>
+            <input type="file" id="photo" name="photo" accept="image/*" required><br>
+
+            <label for="transcript">Academic Transcript:</label>
+            <input type="file" id="transcript" name="transcript" accept=".pdf,.jpg,.jpeg,.png" required>
+            <span class="note">Accepted: PDF, JPG, JPEG, PNG</span><br>
+        </fieldset>
+
+        <div class="form-actions">
+            <button class="submit" type="submit">Submit</button>
+            <button class="reset" type="reset">Reset</button>
+        </div>
+    </form>
+</body>
+</html>
