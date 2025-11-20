@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Library.css">    
+    <title>Library Management System</title>
+</head>
+<body>
+
+<h1>Library Management System</h1>
+
+<form id="library-form">
+    <label for="book-title">Book Title:</label>
+    <input type="text" id="book-title" placeholder="Enter the book title">
+
+    <label for="publication-year">Publication Year:</label>
+    <input type="text" id="publication-year" placeholder="Enter the publication year">
+
+    <button type="submit">Add Book</button>
+</form>
+
+<h2>Book List</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Book Title</th>
+            <th>Publication Year</th>
+        </tr>
+    </thead>
+
+    <tbody id="book-list">
+    </tbody>
+</table>
+
+<script src="Library.js"></script>
+</body>
+</html>
