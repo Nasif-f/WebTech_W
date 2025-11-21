@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fixed Contact Widget</title>
+
+    <style>
+        body {
+            min-height: 2000px; 
+            font-family: Arial, sans-serif;
+        }
+
+        
+        #contact-widget {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #ffdd99;
+            padding: 15px 20px;
+            border: 2px solid #333;
+            border-radius: 10px;
+            z-index: 9999;
+            width: 180px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+            transition: background-color 0.3s;
+        }
+
+        #contact-widget:hover {
+            background-color: #ffcc66;
+        }
+
+        #contact-widget h3 {
+            margin: 0;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        #contact-widget a {
+            text-decoration: none;
+            color: #0000cc;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="contact-widget">
+        <h3>Contact Us</h3>
+        <p>01825711099</p>
+        <p>Email: <a href="mailto:support@example.com">support@example.com</a></p>
+    </div>
+
+</body>
+</html>
